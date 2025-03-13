@@ -7,29 +7,34 @@
   <link rel="stylesheet" href="./src/output.css">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
-<body>
+<body class="bg-Very-dark-blue-main-BG h-screen grid place-content-center text-lg text-White">
 
   <main>
-    <div>
-      <img src="./assets/images/image-equilibrium.jpg" alt="image equilibrium">
-      <h2>Equilibrium #3429</h2>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-
-      <div>
-        <div>
-          <img src="./assets/images/icon-ethereum.svg" alt="icon-ethereum">
-          <p>0.041 ETH</p>
+    <div class="w-[327px] bg-Very-dark-blue-card-BG p-6 rounded-[15px]">
+      <div class="relative group">
+        <img class="rounded-lg mb-6 cursor-pointer" src="./assets/images/image-equilibrium.jpg" alt="image equilibrium">
+        <div class="bg-Cyan/50 absolute top-0 w-full h-full rounded-lg hidden place-content-center cursor-pointer group-hover:grid">
+          <img src="./assets/images/icon-view.svg" alt="">
         </div>
-        <div>
+      </div>
+      <h2 class="font-semibold text-[1.22em] mb-3 cursor-pointer hover:text-Cyan">Equilibrium #3429</h2>
+      <p class="text-Soft-blue text-base mb-4">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="flex place-content-between mb-4">
+        <div class="flex items-center gap-1.5">
+          <img src="./assets/images/icon-ethereum.svg" alt="icon-ethereum">
+          <p class="text-Cyan text-[0.84em] font-semibold">0.041 ETH</p>
+        </div>
+        <div class="flex items-center gap-1.5">
           <img src="./assets/images/icon-clock.svg" alt="icon-clock">
-          <p>3 days left</p>
+          <p class="text-[0.84em] font-semibold">3 days left</p>
         </div>
       </div>
 
-      <hr>
-      <div>
-        <img src="./assets/images/image-avatar.png" alt="image-avatar">
-        <p>Creation of Jules Wyvern</p>
+      <hr class="text-Very-dark-blue-line mb-4">
+      <div class="flex gap-4">
+        <img class="w-[33px] h-[33px] border border-White rounded-full" src="./assets/images/image-avatar.png" alt="image-avatar">
+        <p class="text-[0.84em]"><span class="text-Soft-blue">Creation of</span> <span class="cursor-pointer hover:text-Cyan">Jules Wyvern</span></p>
       </div>
       
     </div>
