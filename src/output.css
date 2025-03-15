@@ -6,17 +6,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
-    --color-amber-200: oklch(0.924 0.12 95.746);
     --spacing: 0.25rem;
-    --text-sm: 0.875rem;
-    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-semibold: 600;
-    --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
@@ -252,9 +247,6 @@
   .items-center {
     align-items: center;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -292,9 +284,6 @@
   .bg-Very-dark-blue-main-BG {
     background-color: var(--color-Very-dark-blue-main-BG);
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -306,41 +295,11 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
   .text-\[0\.84em\] {
     font-size: 0.84em;
   }
   .text-\[1\.22em\] {
     font-size: 1.22em;
-  }
-  .text-\[1\.375em\] {
-    font-size: 1.375em;
-  }
-  .text-\[22px\] {
-    font-size: 22px;
-  }
-  .font-\[0\.84em\] {
-    --tw-font-weight: 0.84em;
-    font-weight: 0.84em;
-  }
-  .font-\[12px\] {
-    --tw-font-weight: 12px;
-    font-weight: 12px;
-  }
-  .font-\[14px\] {
-    --tw-font-weight: 14px;
-    font-weight: 14px;
-  }
-  .font-\[15px\] {
-    --tw-font-weight: 15px;
-    font-weight: 15px;
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -358,14 +317,8 @@
   .text-White {
     color: var(--color-White);
   }
-  .text-red-500 {
-    color: var(--color-red-500);
-  }
   .underline {
     text-decoration-line: underline;
-  }
-  .opacity-5 {
-    opacity: 5%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -383,6 +336,21 @@
       @media (hover: hover) {
         color: var(--color-Cyan);
       }
+    }
+  }
+  .sm\:w-\[350px\] {
+    @media (width >= 40rem) {
+      width: 350px;
+    }
+  }
+  .sm\:text-\[1\.22em\] {
+    @media (width >= 40rem) {
+      font-size: 1.22em;
+    }
+  }
+  .sm\:text-\[3\.22em\] {
+    @media (width >= 40rem) {
+      font-size: 3.22em;
     }
   }
 }
